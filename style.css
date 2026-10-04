@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #080808;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at 70% 50%,
+            #242424 0%,
+            #101010 35%,
+            #080808 70%
+        );
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.hero-content {
+    width: 55%;
+    padding-left: 8%;
+    position: relative;
+    z-index: 5;
+}
+
+.small-text {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #999;
+    margin-bottom: 25px;
+}
+
+.title {
+    font-size: clamp(40px, 6vw, 90px);
+    line-height: 0.95;
+    letter-spacing: 10px;
+    font-weight: 800;
+
+    overflow: hidden;
+}
+
+.title span {
+    display: block;
+    color: #bdbdbd;
+}
+
+.description {
+    max-width: 480px;
+    margin-top: 35px;
+
+    color: #aaa;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+    display: flex;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.stat h2 {
+    font-size: 34px;
+    margin-bottom: 7px;
+}
+
+.stat p {
+    color: #777;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   CAR
+========================= */
+
+.car-container {
+    position: absolute;
+
+    width: 62%;
+    right: -5%;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 2;
+}
+
+.car {
+    width: 100%;
+    display: block;
+
+    filter:
+        drop-shadow(0 30px 30px rgba(0,0,0,0.7))
+        drop-shadow(0 0 40px rgba(255,255,255,0.08));
+}
+
+.glow {
+    position: absolute;
+
+    width: 500px;
+    height: 300px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: rgba(255,255,255,0.08);
+    filter: blur(100px);
+
+    border-radius: 50%;
+
+    z-index: -1;
+}
+
+
+/* =========================
+   SCROLL TEXT
+========================= */
+
+.scroll-text {
+    position: absolute;
+
+    bottom: 35px;
+    left: 8%;
+
+    font-size: 11px;
+    letter-spacing: 4px;
+
+    color: #777;
+
+    z-index: 5;
+}
+
+.scroll-text span {
+    display: inline-block;
+    margin-left: 12px;
+    font-size: 18px;
+}
+
+
+/* =========================
+   SECOND SECTION
+========================= */
+
+.next-section {
+    min-height: 100vh;
+
+    padding: 140px 10%;
+
+    background: #eeeeee;
+    color: #111;
+}
+
+.next-section > p:first-child {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.next-section h2 {
+    font-size: clamp(45px, 7vw, 100px);
+    line-height: 0.95;
+    letter-spacing: -4px;
+}
+
+.next-description {
+    max-width: 500px;
+    margin-top: 40px;
+
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .hero {
+        min-height: 750px;
+        align-items: flex-start;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 80px 25px;
+    }
+
+    .title {
+        font-size: 45px;
+        letter-spacing: 5px;
+    }
+
+    .description {
+        font-size: 14px;
+        margin-top: 25px;
+    }
+
+    .stats {
+        gap: 25px;
+        margin-top: 35px;
+    }
+
+    .stat h2 {
+        font-size: 25px;
+    }
+
+    .stat p {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .car-container {
+        width: 120%;
+        right: -25%;
+        top: 68%;
+    }
+
+    .scroll-text {
+        left: 25px;
+        bottom: 20px;
+    }
+
+    .next-section {
+        padding: 100px 25px;
+    }
+}

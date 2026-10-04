@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Scroll Driven Hero</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-text">SCROLL EXPERIENCE / 2026</p>
+
+            <h1 class="title">
+                W E L C O M E
+                <span>I T Z F I Z Z</span>
+            </h1>
+
+            <p class="description">
+                Experience motion designed around your scroll.
+                Smooth interactions. Bold visuals. Better experiences.
+            </p>
+
+            <!-- STATS -->
+            <div class="stats">
+
+                <div class="stat">
+                    <h2>92%</h2>
+                    <p>Engagement</p>
+                </div>
+
+                <div class="stat">
+                    <h2>87%</h2>
+                    <p>Performance</p>
+                </div>
+
+                <div class="stat">
+                    <h2>96%</h2>
+                    <p>User Experience</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CAR -->
+        <div class="car-container">
+
+            <div class="glow"></div>
+
+            <svg class="car" viewBox="0 0 800 400"
+                 xmlns="http://www.w3.org/2000/svg">
+
+                <!-- Shadow -->
+                <ellipse
+                    cx="400"
+                    cy="335"
+                    rx="285"
+                    ry="25"
+                    fill="rgba(0,0,0,0.5)"
+                />
+
+                <!-- Car Body -->
+                <path
+                    class="car-body"
+                    d="M105 280
+                       L135 210
+                       C150 175 185 155 230 150
+                       L305 145
+                       L355 90
+                       C370 73 392 65 420 65
+                       L515 65
+                       C545 65 570 78 588 100
+                       L630 150
+                       L680 160
+                       C720 168 750 195 758 230
+                       L770 280
+                       Z"
+                    fill="#e7e7e7"
+                />
+
+                <!-- Windows -->
+                <path
+                    d="M335 145
+                       L375 100
+                       C385 89 398 83 415 83
+                       L455 83
+                       L455 145
+                       Z"
+                    fill="#151515"
+                />
+
+                <path
+                    d="M470 83
+                       L510 83
+                       C528 83 543 91 555 106
+                       L585 145
+                       L470 145
+                       Z"
+                    fill="#151515"
+                />
+
+                <!-- Front -->
+                <path
+                    d="M680 170
+                       C720 180 740 200 750 230
+                       L760 270
+                       L690 270
+                       L670 210
+                       Z"
+                    fill="#bcbcbc"
+                />
+
+                <!-- Headlight -->
+                <ellipse
+                    cx="720"
+                    cy="215"
+                    rx="20"
+                    ry="10"
+                    fill="#ffffff"
+                />
+
+                <!-- Door -->
+                <path
+                    d="M470 150 L470 270"
+                    stroke="#999"
+                    stroke-width="3"
+                />
+
+                <!-- Handle -->
+                <rect
+                    x="510"
+                    y="165"
+                    width="32"
+                    height="6"
+                    rx="3"
+                    fill="#777"
+                />
+
+                <!-- Wheels -->
+                <circle cx="235" cy="280" r="55" fill="#111"/>
+                <circle cx="235" cy="280" r="28" fill="#777"/>
+                <circle cx="235" cy="280" r="12" fill="#222"/>
+
+                <circle cx="635" cy="280" r="55" fill="#111"/>
+                <circle cx="635" cy="280" r="28" fill="#777"/>
+                <circle cx="635" cy="280" r="12" fill="#222"/>
+
+                <!-- Bumper -->
+                <rect
+                    x="705"
+                    y="270"
+                    width="60"
+                    height="15"
+                    rx="7"
+                    fill="#222"
+                />
+
+            </svg>
+
+        </div>
+
+        <div class="scroll-text">
+            SCROLL TO EXPLORE
+            <span>↓</span>
+        </div>
+
+    </section>
+
+
+    <!-- SECOND SECTION -->
+    <section class="next-section">
+
+        <p>THE JOURNEY CONTINUES</p>
+
+        <h2>
+            Motion makes<br>
+            interfaces memorable.
+        </h2>
+
+        <p class="next-description">
+            This section exists to demonstrate that the hero animation
+            is connected to real page scrolling.
+        </p>
+
+    </section>
+
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
